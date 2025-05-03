@@ -505,8 +505,24 @@
 
 # ###################################################
 # # 33 Sum of positive
-def positive_sum(arr):
-    return sum([num for num in arr if num>=0])
+# def positive_sum(arr):
+#     return sum(num for num in arr if num>=0)
 
-print(positive_sum([1,-2,3,4,5]))
+# print(positive_sum([1,-2,3,4,5]))
+
+# ###################################################
+# # 34 Calculate BMI
+
+# def bmi(weight, height):
+#     total = weight / (height*height)
+#     if total<=18.5:
+#         return "Underweight"
+#     elif total<=25.0:
+#         return "Normal"
+#     elif total<=30.0:
+#         return "Overweight"
+#     else:
+#         return "Obese"
+
+# print(bmi(50, 1.80))
 
