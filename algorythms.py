@@ -503,5 +503,6 @@
 # # Example test
 # print(human_years_cat_years_dog_years(10))  # [10, 24 + 8*4 = 56, 24 + 8*5 = 64]
 
-
+# ###################################################
+# # 33 Sum of positive
 
