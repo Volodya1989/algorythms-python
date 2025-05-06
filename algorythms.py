@@ -526,3 +526,18 @@
 
 # print(bmi(50, 1.80))
 
+# ###################################################
+# # 35 Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right
+
+
+def remove(st: str, n: int):
+    result = []
+    for char in st:
+        if char == "!" and n > 0:
+            n -= 1
+        result.append(char)
+    return "".join(result)
+
+
+def remove_1(s, n):
+    return s.replace("!", "", n)
