@@ -530,14 +530,25 @@
 # # 35 Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right
 
 
-def remove(st: str, n: int):
-    result = []
-    for char in st:
-        if char == "!" and n > 0:
-            n -= 1
-        result.append(char)
-    return "".join(result)
+# def remove(st: str, n: int):
+#     result = []
+#     for char in st:
+#         if char == "!" and n > 0:
+#             n -= 1
+#         result.append(char)
+#     return "".join(result)
 
 
-def remove_1(s, n):
-    return s.replace("!", "", n)
+# def remove_1(s, n):
+#     return s.replace("!", "", n)
+
+# ###################################################
+# # 36 Shortest Word
+
+# def find_short(s):
+#    return min(len(word) for word in s.split())
+
+# print(find_short("bitcoin take over the world maybe who knows perhaps"))
+
+# ###################################################
+# # 37
