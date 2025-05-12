@@ -552,7 +552,30 @@
 
 # ###################################################
 # # 37 USD => CNY
-def usdcny(usd):
-    return f"{usd*6.75:.2f} Chinese Yuan"
+# def usdcny(usd):
+#     return f"{usd*6.75:.2f} Chinese Yuan"
 
-print(usdcny(10))
+# print(usdcny(10))
+
+# ###################################################
+# # 38 Bouncing Balls
+
+# def bouncing_ball(h, bounce, window):
+#     # Check the three conditions
+#     if h <= 0 or not (0 < bounce < 1) or window >= h:
+#         return -1
+
+#     count = 1  # Ball seen once on initial fall
+#     height = h * bounce
+
+#     # Count the times it passes the window on the way up and down
+#     while height > window:
+#         count += 2  # One up, one down
+#         height *= bounce
+
+#     return count
+
+   
+
+
+
