@@ -575,6 +575,21 @@
 
 #     return count
 
+# ###################################################
+# # 39 Sum of numbers from 0 to N
+
+def show_sequence(n):
+    if n<0:
+        return f"{n}<0"
+    if n==0:
+        return f"n==0"
+    
+    series = "+".join(str(i) for i in range(n+1))
+    total = sum(range(n+1))
+    return f"{series}={total}"
+
+print(show_sequence(7))
+
    
 
 
