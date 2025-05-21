@@ -593,27 +593,41 @@
 # ###################################################
 # # 40 Highest Scoring Word
 
-def high(x):
-    '''
-    1.first we need to split words into aray
-    2.then we create another function to calculate each word
-    3.we are using sum and iterate using ord()
-    4.return may using inbuilt function
-    '''
-    words=x.split()
+# def high(x):
+#     '''
+#     1.first we need to split words into aray
+#     2.then we create another function to calculate each word
+#     3.we are using sum and iterate using ord()
+#     4.return may using inbuilt function
+#     '''
+#     words=x.split()
 
-    def word_score(words):
-        return sum(ord(char)-ord('a')+1 for char in words)
+#     def word_score(words):
+#         return sum(ord(char)-ord('a')+1 for char in words)
     
-    return max(words, key=word_score)
+#     return max(words, key=word_score)
 
-def high_2(x):
-    return max(x.split(), key=lambda words: sum(ord(char) - 96 for char in words))
-
-
-print(high("Hello my dear friends"))
+# def high_2(x):
+#     return max(x.split(), key=lambda words: sum(ord(char) - 96 for char in words))
 
 
+# print(high("Hello my dear friends"))
+
+# ###################################################
+# # 41 Tortoise racing
+
+def race(v1, v2, g):
+   if v1>=v2:
+      return None
+   
+   time_in_hours = g/(v2-v1)
+
+   hours=int(time_in_hours)
+   minutes = int((time_in_hours*60)%60)
+   seconds=int((time_in_hours*3600)%60)
+   return[hours, minutes, seconds]
+   
+print(race(720, 850, 70))
 
    
 
