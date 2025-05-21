@@ -614,7 +614,7 @@
 # print(high("Hello my dear friends"))
 
 # ###################################################
-# # 41 Tortoise racing
+# # 41 Tortoise Racing
 
 def race(v1, v2, g):
    if v1>=v2:
