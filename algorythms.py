@@ -616,18 +616,30 @@
 # ###################################################
 # # 41 Tortoise Racing
 
-def race(v1, v2, g):
-   if v1>=v2:
-      return None
+# def race(v1, v2, g):
+#    if v1>=v2:
+#       return None
    
-   time_in_hours = g/(v2-v1)
+#    time_in_hours = g/(v2-v1)
 
-   hours=int(time_in_hours)
-   minutes = int((time_in_hours*60)%60)
-   seconds=int((time_in_hours*3600)%60)
-   return[hours, minutes, seconds]
+#    hours=int(time_in_hours)
+#    minutes = int((time_in_hours*60)%60)
+#    seconds=int((time_in_hours*3600)%60)
+#    return[hours, minutes, seconds]
    
-print(race(720, 850, 70))
+# print(race(720, 850, 70))
+
+# ###################################################
+# # 42 Remove First and Last Character Part Two
+
+def array(string: str) -> str:
+    parts = string.split(',')
+    if len(parts) <= 2:
+        return None
+    return ' '.join(parts[1:-1])
+
+
+print(array('1,2,3,4'))
 
    
 
