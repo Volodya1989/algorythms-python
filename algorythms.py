@@ -632,15 +632,17 @@
 # ###################################################
 # # 42 Remove First and Last Character Part Two
 
-def array(string: str) -> str:
-    parts = string.split(',')
-    if len(parts) <= 2:
-        return None
-    return ' '.join(parts[1:-1])
+# def array(string: str) -> str:
+#     parts = string.split(',')
+#     if len(parts) <= 2:
+#         return None
+#     return ' '.join(parts[1:-1])
 
 
-print(array('1,2,3,4'))
+# print(array('1,2,3,4'))
 
+# ###################################################
+# # 43
    
 
 
