@@ -644,11 +644,34 @@
 # ###################################################
 # # 43 Enumerable Magic - Does My List Include This?
 
-   
-def include(arr,item):
-    return item in arr
+# def include(arr,item):
+#     return item in arr
 
-print(include([1,2,3],3))
+# print(include([1,2,3],3))
 
+# ###################################################
+# # 44 Two fighters, one winner.
+# class Fighter(object):
+#     def __init__(self, name, health, damage_per_attack):
+#         self.name = name
+#         self.health = health
+#         self.damage_per_attack = damage_per_attack
+        
+#     def __str__(self): return "Fighter({}, {}, {})".format(self.name, self.health, self.damage_per_attack)
+#     __repr__=__str__
+
+# def declare_winner(fighter1, fighter2, first_attacker):
+#     attacker, defender = (fighter1, fighter2) if first_attacker==fighter1.name else (fighter2, fighter1)
+
+#     while True:
+#         defender.health-=attacker.damage_per_attack
+#         if defender.health<=0:
+#             return attacker.name
+#         attacker, defender = defender, attacker
+
+# print(declare_winner(Fighter("Lew", 10, 2),Fighter("Harry", 5, 4), "Lew"))
+
+# ###################################################
+# # 45
 
 
