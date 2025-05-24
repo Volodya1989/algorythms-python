@@ -642,8 +642,13 @@
 # print(array('1,2,3,4'))
 
 # ###################################################
-# # 43
+# # 43 Enumerable Magic - Does My List Include This?
+
    
+def include(arr,item):
+    return item in arr
+
+print(include([1,2,3],3))
 
 
 
